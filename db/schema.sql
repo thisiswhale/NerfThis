@@ -10,6 +10,7 @@ CREATE TABLE user(
 
 CREATE TABLE round(
 	id AUTO_INCREMENT NOT NULL,
+	
 	-- map_type FOREIGN KEY (maps_type),
 	-- map_name FOREIGN KEY (maps_name),
 	maps_id INT,
@@ -46,7 +47,12 @@ CREATE TABLE round(
 	Mercy BOOLEAN DEFAULT false,
 	Symmetra BOOLEAN DEFAULT false,
 	Zenyatta BOOLEAN DEFAULT false,
-	user_hero FOREIGN KEY(heroes_name),
+
+	heroes_id INT,
+	INDEX hrs_ind (heroes_id),
+	FOREIGN KEY (heroes_id),
+	REFERENCES heroes(id) ON DELETE CASCADE,
+
 	attack BOOLEAN DEFAULT true,
 	win BOOLEAN DEFAULT true,
 	PRIMARY KEY (id)
