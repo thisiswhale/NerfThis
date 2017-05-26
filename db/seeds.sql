@@ -14,7 +14,7 @@ INSERT INTO maps (type, name) VALUES ('Esscort', 'Watchpoint: Gibraltar');
 
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Eichenwalde');
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Hollywood');
-INSERT INTO maps (type, name) VALUES ('"Hybrid", "King's Row");
+INSERT INTO maps (type, name) VALUES ("Hybrid", "King's Row");
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Numbani');
 
 INSERT INTO maps (type, name) VALUES ('Control', 'Ilios');
