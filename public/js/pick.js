@@ -1,5 +1,7 @@
 // Pick Algorithm
 
+var heroes = ['genji', 'mccree', 'pharah', 'reaper', 'soldier76', 'sombra', 'tracer', 'bastion', 'hanzo', 'junkrat', 'mei', 'torbjorn', 'widowmaker', 'dva', 'orisa', 'reinhardt', 'roadhog', 'winston', 'zarya', 'ana', 'lucio', 'mercy', 'symmetra', 'zenyatta'];
+
 // connection.query('SELECT * WHERE char1 = true, char2 = true, char3 = true, char4=true, char5 = true;', 
 function teamParse(char1, char2, char3, char4, char5, map) {
     var whereObj = {};
@@ -24,6 +26,7 @@ function teamParse(char1, char2, char3, char4, char5, map) {
         whereObj[char5] = true;
         charArr.push(char5);
     }
+
     // Sequelize query to Round Model.  Get all matching teams.
     db.Round.findAll({
         where: whereObj
@@ -31,19 +34,29 @@ function teamParse(char1, char2, char3, char4, char5, map) {
 
         var resultsArr = [];
 
-        // Check if there is a combination with matching map
-
         if (data.length > 0) {
             // Push the extra true characters into results Arr
             for (var i = 0; i < data.length; i++) {
-                for (var j = 0; j < charArray.length; j++) {
-                    if (dbToArr(data[i])[j].indexOf(charArray) === -1) {
-                        resultsArr.push(dbToArr(data[i])[j]);
+                var currentArr = dbToArr(data[i]);
+                for (var j = 0; j < currentArr.length; j++) {
+                    if (currentArr[j].indexOf(charArray) === -1) {
+                        resultsArr.push(currentArr[j]);
                     }
                 }
             }
             // Count and Return the most common heroes
+            var bestMatch;
+            var highCount = 1;
 
+            for (var i = 0; heroes.length; i++) {
+                if (charArr.indexOf(heroes[i]) === -1) {
+                    if (arrCounter(resultsArr, heroes[i]) > highCount) {
+                        highCount = arrCounter(resultsArr, heroes[i]);
+                        bestMatch = heroes[i];
+                    }
+                }
+                return bestMatch;
+            }
             // Make criteria less rigorous
         } else {
             if (char5 != 'none') {
@@ -64,7 +77,7 @@ function teamParse(char1, char2, char3, char4, char5, map) {
 
 // Return array of hero names flagged true
 function dbToArray(dbObj) {
-    var heroes = ['genji', 'mccree', 'pharah', 'reaper', 'soldier76', 'sombra', 'tracer', 'bastion', 'hanzo', 'junkrat', 'mei', 'torbjorn', 'widowmaker', 'dva', 'orisa', 'reinhardt', 'roadhog', 'winston', 'zarya', 'ana', 'lucio', 'mercy', 'symmetra', 'zenyatta'];
+
     var returnArr = [];
 
     for (var i = 0; i < heroes.length; i++) {
@@ -73,4 +86,15 @@ function dbToArray(dbObj) {
         }
     }
     return returnArr;
+}
+
+// Returns the amount of time an element elem appears in array arr.
+function arrCounter(arr, elem) {
+    var counter = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === elem) {
+            counter++;
+        }
+    }
+    return counter;
 }
