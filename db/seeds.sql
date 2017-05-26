@@ -14,7 +14,7 @@ INSERT INTO maps (type, name) VALUES ('Esscort', 'Watchpoint: Gibraltar');
 
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Eichenwalde');
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Hollywood');
-INSERT INTO maps (type, name) VALUES ('Hybrid', 'King's Row');
+INSERT INTO maps (type, name) VALUES ('"Hybrid", "King's Row");
 INSERT INTO maps (type, name) VALUES ('Hybrid', 'Numbani');
 
 INSERT INTO maps (type, name) VALUES ('Control', 'Ilios');
@@ -35,7 +35,7 @@ INSERT INTO heroes (name, portrait) VALUES ('Hanzo', 'https://blzgdapipro-a.akam
 INSERT INTO heroes (name, portrait) VALUES ('Junkrat', 'https://blzgdapipro-a.akamaihd.net/hero/junkrat/icon-portrait.png');
 
 INSERT INTO heroes (name, portrait) VALUES ('Mei', 'https://blzgdapipro-a.akamaihd.net/hero/mei/icon-portrait.png');
-INSERT INTO heroes (name, portrait) VALUES ('Torbjörn', 'https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png');
+INSERT INTO heroes (name, portrait) VALUES ('TorbjÃ¶rn', 'https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Widowmaker', 'https://blzgdapipro-a.akamaihd.net/hero/widowmaker/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('D.Va', 'https://blzgdapipro-a.akamaihd.net/hero/dva/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Orisa', 'https://blzgdapipro-a.akamaihd.net/hero/orisa/icon-portrait.png');
@@ -46,7 +46,7 @@ INSERT INTO heroes (name, portrait) VALUES ('Winston', 'https://blzgdapipro-a.ak
 INSERT INTO heroes (name, portrait) VALUES ('Zarya', 'https://blzgdapipro-a.akamaihd.net/hero/zarya/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Ana', 'https://blzgdapipro-a.akamaihd.net/hero/ana/icon-portrait.png');
 
-INSERT INTO heroes (name, portrait) VALUES ('Lúcio', 'https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png');
+INSERT INTO heroes (name, portrait) VALUES ('LÃºcio', 'https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Mercy', 'https://blzgdapipro-a.akamaihd.net/hero/mercy/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Symmetra', 'https://blzgdapipro-a.akamaihd.net/hero/symmetra/icon-portrait.png');
 INSERT INTO heroes (name, portrait) VALUES ('Zenyatta', 'https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png');
