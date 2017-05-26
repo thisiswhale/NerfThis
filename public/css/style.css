@@ -110,6 +110,7 @@ body {
   border: 1px black solid;
   background-color:  grey;
 }
+/*toggle orange background of portrait*/
 .hero-portrait-image.orange{ background-color: orange; }
 
 .hero-portrait-label{
