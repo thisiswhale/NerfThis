@@ -3,7 +3,7 @@
 body {
     background-image: url("../picture/overwatch.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     padding-top: 90px;
   }
 
