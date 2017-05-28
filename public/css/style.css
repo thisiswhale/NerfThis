@@ -127,6 +127,15 @@ body {
 .role-title{
   border-bottom: 1px black solid;
 }
+.map-button{
+  width:150px;
+}
+
+.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
 #menu-select{
 
 }
