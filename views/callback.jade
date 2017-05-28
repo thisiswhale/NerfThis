@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  script.
+    // Use local storage to keep track of the user's token and id.
+    localStorage.setItem('idToken', '#{user.extraParams.id_token}')
+    localStorage.setItem('userId', '#{user.profile.id}')
+
+    window.location.href = '/user/';
