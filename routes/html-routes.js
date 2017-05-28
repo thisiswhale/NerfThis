@@ -17,7 +17,7 @@ var env = {
 module.exports = function(app) {
 
     app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname, "../views/index2.html"));
+        res.sendFile(path.join(__dirname, "../views/index.html"));
     });
 
     /* GET home page. */
