@@ -1,7 +1,9 @@
 module.exports= function(sequelize, DataType){
 	var Map = sequelize.define("Map", {
-		type: DataTypes.STRING,
-		name: DataTypes.STRING	
+		map: {
+			type: DataTypes.STRING,
+			name: DataTypes.STRING	
+		}
 	},
 	    {
       // ROUTES We're saying that we want our Round to have Map

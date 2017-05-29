@@ -1,7 +1,9 @@
 module.exports= function(sequelize, DataType){
 	var User = sequelize.define("User", {
-		name: DataTypes.STRING,
-		password: DataTypes.STRING		
+		user: {
+			name: DataTypes.STRING,
+			password: DataTypes.STRING		
+		}
 	},
 	{
       // We're saying that we want our User to have Round
