@@ -1,6 +1,6 @@
-// Pick Algorithm
+// Pick Code
 
-var heroes = ['genji', 'mccree', 'pharah', 'reaper', 'soldier76', 'sombra', 'tracer', 'bastion', 'hanzo', 'junkrat', 'mei', 'torbjorn', 'widowmaker', 'dva', 'orisa', 'reinhardt', 'roadhog', 'winston', 'zarya', 'ana', 'lucio', 'mercy', 'symmetra', 'zenyatta'];
+var heroes = ['genji', 'mccree', 'pharah', 'reaper', 'soldier-76', 'sombra', 'tracer', 'bastion', 'hanzo', 'junkrat', 'mei', 'torbjorn', 'widowmaker', 'dva', 'orisa', 'reinhardt', 'roadhog', 'winston', 'zarya', 'ana', 'lucio', 'mercy', 'symmetra', 'zenyatta'];
 
 // connection.query('SELECT * WHERE char1 = true, char2 = true, char3 = true, char4=true, char5 = true;', 
 function teamParse(char1, char2, char3, char4, char5, map) {
