@@ -2,9 +2,14 @@
 <html>
 
 <head>
-  <title>Login Page</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>User Entry</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -12,205 +17,201 @@
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
         <div class="container">
-        </div>
-
-      </nav>
-    </div>
-    <div class="row" id="heroes-select">
-      <div class="col-lg-7">
-        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">All</button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Offense</button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Defense</button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Tank</button>
-          </div>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default">Support</button>
-          </div>
-        </div>
-        <div class="u-max-width-container">
-          <ul data-js="spotlight-list" data-id="heroes-spotlight" class="hero-portrait-group">
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/genji/" data-js="spotlight-activator" data-hero-id="genji" data-spotlight-header="Genji" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/genji/full-portrait.png" data-spotlight-caption="A cyborg ninja and deadly warrior who has found peace with his mechanical body."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/genji/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Genji</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/mccree/" data-js="spotlight-activator" data-hero-id="mccree" data-spotlight-header="McCree" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/mccree/full-portrait.png" data-spotlight-caption="An outlaw gunslinger who doles out justice on his own terms."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mccree/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">McCree</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/pharah/" data-js="spotlight-activator" data-hero-id="pharah" data-spotlight-header="Pharah" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/pharah/full-portrait.png" data-spotlight-caption="A decorated soldier who patrols the skies in her experimental Raptora combat suit."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/pharah/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Pharah</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/reaper/" data-js="spotlight-activator" data-hero-id="reaper" data-spotlight-header="Reaper" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/reaper/full-portrait.png" data-spotlight-caption="A mercenary and ruthless killer who hunts the former agents of Overwatch."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/reaper/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Reaper</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/soldier-76/" data-js="spotlight-activator" data-hero-id="soldier-76" data-spotlight-header="Soldier: 76" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/soldier-76/full-portrait.png"
-                data-spotlight-caption="A vigilante who will stop at nothing to bring the enemies of Overwatch to justice." data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/soldier-76/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Soldier: 76</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/sombra/" data-js="spotlight-activator" data-hero-id="sombra" data-spotlight-header="Sombra" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/sombra/full-portrait.png" data-spotlight-caption="A notorious hacker, on the hunt for secrets—and the power they bring."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/sombra/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Sombra</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/tracer/" data-js="spotlight-activator" data-hero-id="tracer" data-spotlight-header="Tracer" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/tracer/full-portrait.png" data-spotlight-caption="A former Overwatch agent, time-jumping adventurer, and irrepressible force for good."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/tracer/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Tracer</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/bastion/" data-js="spotlight-activator" data-hero-id="bastion" data-spotlight-header="Bastion" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/bastion/full-portrait.png" data-spotlight-caption="A transforming robot who explores the world; fascinated by nature, but wary of humanity."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/bastion/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Bastion</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/hanzo/" data-js="spotlight-activator" data-hero-id="hanzo" data-spotlight-header="Hanzo" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/hanzo/full-portrait.png" data-spotlight-caption="A lethal bowman and assassin without peer."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/hanzo/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Hanzo</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/junkrat/" data-js="spotlight-activator" data-hero-id="junkrat" data-spotlight-header="Junkrat" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/junkrat/full-portrait.png" data-spotlight-caption="An explosives-obsessed freak who lives to cause chaos and destruction."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/junkrat/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Junkrat</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/mei/" data-js="spotlight-activator" data-hero-id="mei" data-spotlight-header="Mei" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/mei/full-portrait.png" data-spotlight-caption="A specialist in weather manipulation who has taken up the fight to preserve the environment."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mei/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Mei</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/torbjorn/" data-js="spotlight-activator" data-hero-id="torbjorn" data-spotlight-header="Torbjörn" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/torbjorn/full-portrait.png" data-spotlight-caption="An ingenious engineer who forges weapons systems on the battlefield."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Torbjörn</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/widowmaker/" data-js="spotlight-activator" data-hero-id="widowmaker" data-spotlight-header="Widowmaker" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/widowmaker/full-portrait.png"
-                data-spotlight-caption="A perfect assassin: patient, ruthlessly efficient, and without emotion or remorse." data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/widowmaker/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Widowmaker</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/dva/" data-js="spotlight-activator" data-hero-id="dva" data-spotlight-header="D.Va" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/dva/full-portrait.png" data-spotlight-caption="A former pro gamer who now pilots a state-of-the-art mech in defense of her homeland."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/dva/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">D.Va</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/orisa/" data-js="spotlight-activator" data-hero-id="orisa" data-spotlight-header="Orisa" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/orisa/full-portrait.png" data-spotlight-caption="A mechanical peacekeeper, built to defend the people of Numbani."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/orisa/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Orisa</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/reinhardt/" data-js="spotlight-activator" data-hero-id="reinhardt" data-spotlight-header="Reinhardt" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/reinhardt/full-portrait.png" data-spotlight-caption="A champion of a bygone age, who lives by the knightly codes of valor, justice, and courage."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/reinhardt/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Reinhardt</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/roadhog/" data-js="spotlight-activator" data-hero-id="roadhog" data-spotlight-header="Roadhog" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/roadhog/full-portrait.png" data-spotlight-caption="A ruthless killer with tremendous strength and a reputation for cruelty and wanton destruction."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/roadhog/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Roadhog</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/winston/" data-js="spotlight-activator" data-hero-id="winston" data-spotlight-header="Winston" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/winston/full-portrait.png" data-spotlight-caption="A super-intelligent, genetically engineered gorilla, scientist, and champion for humanity&#39;s potential."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/winston/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Winston</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/zarya/" data-js="spotlight-activator" data-hero-id="zarya" data-spotlight-header="Zarya" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/zarya/full-portrait.png" data-spotlight-caption="One of the world&#39;s strongest women, who sacrificed personal glory to protect her country."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait is-active">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/zarya/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Zarya</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/ana/" data-js="spotlight-activator" data-hero-id="ana" data-spotlight-header="Ana" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/ana/full-portrait.png" data-spotlight-caption="This Overwatch stalwart has emerged from years of seclusion to defend a new generation."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/ana/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Ana</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/lucio/" data-js="spotlight-activator" data-hero-id="lucio" data-spotlight-header="Lúcio" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/lucio/full-portrait.png" data-spotlight-caption="An international celebrity who fights for social change through his music and actions."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Lúcio</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/mercy/" data-js="spotlight-activator" data-hero-id="mercy" data-spotlight-header="Mercy" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/mercy/full-portrait.png" data-spotlight-caption="A guardian angel, peerless healer, brilliant medical researcher, and staunch advocate for peace."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/mercy/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Mercy</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/symmetra/" data-js="spotlight-activator" data-hero-id="symmetra" data-spotlight-header="Symmetra" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/symmetra/full-portrait.png" data-spotlight-caption="An architech who manipulates hard-light constructs to build her perfect, ordered world."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/symmetra/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Symmetra</span></a>
-            </li>
-            <li class="u-inline-block u-relative">
-              <a href="https://playoverwatch.com/en-us/heroes/zenyatta/" data-js="spotlight-activator" data-hero-id="zenyatta" data-spotlight-header="Zenyatta" data-spotlight-image="https://blzgdapipro-a.akamaihd.net/hero/zenyatta/full-portrait.png" data-spotlight-caption="An omnic monk who wanders the world in search of spiritual enlightenment."
-                data-analytics="hero-selection" data-analytics-placement="Home" class="hero-portrait">
-                <div class="hero-portrait-image-mask">
-                  <div style="background-image:url(&quot;https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png&quot;)" class="hero-portrait-image"></div>
-                </div><span class="hero-portrait-label">Zenyatta</span></a>
-            </li>
+          <a class="navbar-brand logo" href="#">Nerf This</a>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Game Entry</a></li>
+            <li><a href="#">Hero Selector</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Logout</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </div>
+    <form class="form" action="/" method="POST">
+      <div class="row" id="round-select-menu">
+        <div class="col-lg-8" id="heroes-select">
+
+          <div class="row offense-heroes">
+            <h4 class=" text-left">
+              From your recent games, select your team composition. Your record submisssion will be stored to our database. First, choose hero you picked, then select your team composition.
+            </h4>
+            <h4 class="role-title">OFFENSE</h4>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="genji"  src="https://blzgdapipro-a.akamaihd.net/hero/genji/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Genji</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="mccree" src="https://blzgdapipro-a.akamaihd.net/hero/mccree/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Mcree</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="pharah" src="https://blzgdapipro-a.akamaihd.net/hero/pharah/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Pharah</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="reaper" src="https://blzgdapipro-a.akamaihd.net/hero/reaper/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Reaper</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="soldier-76"src="https://blzgdapipro-a.akamaihd.net/hero/soldier-76/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Soldier:76</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="sombra" src="https://blzgdapipro-a.akamaihd.net/hero/sombra/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Sombra</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="tracer" src="https://blzgdapipro-a.akamaihd.net/hero/tracer/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Tracer</p></a>
+            </div>
+          </div>
+          <div class="row defense-heroes">
+            <h4 class="role-title">DEFENSE</h4>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="bastion" src="https://blzgdapipro-a.akamaihd.net/hero/bastion/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Bastion</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="hanzo" src="https://blzgdapipro-a.akamaihd.net/hero/hanzo/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Hanzo</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="junkrat" src="https://blzgdapipro-a.akamaihd.net/hero/junkrat/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Junkrat</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="mei" src="https://blzgdapipro-a.akamaihd.net/hero/mei/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Mei</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="torbjorn" src="https://blzgdapipro-a.akamaihd.net/hero/torbjorn/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Torbjörn</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="widowmaker" src="https://blzgdapipro-a.akamaihd.net/hero/widowmaker/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Widowmaker</p></a>
+            </div>
+          </div>
+          <div class="row tank-heroes">
+            <h4 class="role-title">TANK</h4>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="dva" src="https://blzgdapipro-a.akamaihd.net/hero/dva/icon-portrait.png">
+              <p class="hero-portrait-label text-center">D.Va</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="orisa" src="https://blzgdapipro-a.akamaihd.net/hero/orisa/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Orisa</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="reinhardt" src="https://blzgdapipro-a.akamaihd.net/hero/reinhardt/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Reinhardt</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="roadhog" src="https://blzgdapipro-a.akamaihd.net/hero/roadhog/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Roadhog</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="winston" src="https://blzgdapipro-a.akamaihd.net/hero/winston/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Winston</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="zarya" src="https://blzgdapipro-a.akamaihd.net/hero/zarya/icon-portrait.png">
+              <p class="hero-portrait-label text-center">Zarya</p></a>
+            </div>
+          </div>
+          <div class="row support-heroes">
+            <h4 class="role-title">SUPPORT</h4>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="ana" src="https://blzgdapipro-a.akamaihd.net/hero/ana/icon-portrait.png">
+                  <p class="hero-portrait-label text-center">Ana</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="lucio" src="https://blzgdapipro-a.akamaihd.net/hero/lucio/icon-portrait.png">
+                  <p class="hero-portrait-label text-center">Lúcio</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="mercy" src="https://blzgdapipro-a.akamaihd.net/hero/mercy/icon-portrait.png">
+                  <p class="hero-portrait-label text-center">Mercy</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="symmetra" src="https://blzgdapipro-a.akamaihd.net/hero/symmetra/icon-portrait.png">
+                  <p class="hero-portrait-label text-center">Symmetra</p></a>
+            </div>
+            <div class="hero-portrait-div col-lg-2">
+              <a href="#"><img class="img-rounded hero-portrait-image" name="zenyatta" src="https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png">
+                  <p class="hero-portrait-label text-center">Zenyatta</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 side-bar text-center" id="menu-select">
+          <h4 class="role-title text-left">Map Format</h4>
+          <br />
+          <div class="btn-group" data-toggle="buttons" id="click-map-select">
+            <label class="btn btn-default active click-map-select">
+            <input type="radio" name="map-type" value="assault" autocomplete="off" >Assault
+          </label>
+            <label class="btn btn-default click-map-select">
+            <input type="radio" name="map-type" value="escort" autocomplete="off">Escort
+          </label>
+            <label class="btn btn-default click-map-select">
+            <input type="radio" name="map-type" value="hybrid" autocomplete="off">Hybrid
+          </label>
+            <label class="btn btn-default click-map-select">
+            <input type="radio" name="map-type" value="control" autocomplete="off">Control
+          </label>
+          </div>
+
+          <br /><br />
+
+          <div class="btn-group map-select">
+            <button type="button" class="btn btn-default dropdown-toggle map-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="selection">Map Select </span><span class="caret text-right"></span>
+          </button>
+            <ul class="dropdown-menu" id="dropdown-map">
+              <li><a href="#" value='hanamura'>Hanamura</a></li>
+              <li><a href="#" value='temple-of-anubis'>Temple of Anubis</a></li>
+              <li><a href="#" value='voskaya-industries'>Voskaya Industries</a></li>
+            </ul>
+          </div>
+
+          <br /><br /><span>Position:</span>
+          <div class="btn-group" data-toggle="buttons" id="map-select-position">
+            <label class="btn btn-default">
+            <input type="radio" name='position' value="1" autocomplete="off" >Attack
+          </label>
+            <label class="btn btn-default">
+            <input type="radio" name='position' value="0" autocomplete="off" >Defend
+          </label>
+          </div>
+          <br /><br /><span>Round result:</span>
+          <div class="btn-group" data-toggle="buttons" id="map-select-result">
+            <label class="btn btn-default">
+            <input type="radio" name='result' value="1" autocomplete="off" >Success
+          </label>
+            <label class="btn btn-default">
+            <input type="radio" name='result' value="0" autocomplete="off" >Defeat
+          </label>
+          </div>
+          <br /><br />
+          <button type="submit" id="entry-submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </form>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </div>
+<footer class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <!-- <ul class="bs-docs-footer-links">
+      <li><a></a></li>
+    </ul> -->
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017 Nerf This, Inc. &emsp; <a href="#">Github</a> </p>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="./js/user-entry.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
 

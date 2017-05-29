@@ -1,9 +1,19 @@
 
+html {
+
+  min-height: 100%;
+         margin: 0;
+         position: relative;
+
+}
 
 body {
     background-image: url("../picture/overwatch.jpg");
     background-size: cover;
-    padding-top: 90px;
+    padding-top: 60px;
+       height:100%;
+       margin: 0;
+
   }
 
 .panel-login {
@@ -101,4 +111,61 @@ body {
 	color: #59B2E0;
 	background-color: #1CA347;
 	border-color: #1CA347;
+}
+
+.logo{
+  font-size: 25px;
+  color: #f99e1a !important;
+}
+.navbar-nav{
+  font-size: 16px ;
+}
+.hero-portrait-div {
+  margin: 5px 2.5px;
+}
+.hero-portrait-image{
+  height:80px;
+  border: 1px black solid;
+  background-color:  grey;
+}
+/*toggle orange background of portrait*/
+.hero-portrait-image.orange{ background-color: #f99e1a; }
+
+.hero-portrait-label{
+  position:relative;
+
+}
+#round-select-menu{
+  background-color: lemonchiffon;
+  padding: 30px 30px 15px 30px;
+  border: 1.5px #222 solid;
+  border-radius: 10px;
+  margin: 2% 0;
+
+}
+.role-title{
+  border-bottom: 1px black solid;
+}
+.map-button{
+  width:200px;
+}
+
+.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+footer{
+
+}
+footer .container{
+  font-size: 16px;
+  height:60px;
+padding-top: 12px;
+color: #f99e1a;
+
+}
+
+.navbar-fixed-bottom{
+  position:static !important;
 }
