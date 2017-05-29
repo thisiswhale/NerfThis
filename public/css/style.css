@@ -3,8 +3,7 @@
 body {
     background-image: url("../picture/overwatch.jpg");
     background-size: cover;
-    background-repeat: repeat;
-    padding-top: 90px;
+    background-repeat: no-repeat;
   }
 
 .panel-login {
