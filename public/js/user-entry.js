@@ -2,8 +2,8 @@
 $(".hero-portrait-image").click(function() {
   event.preventDefault();
   var limit = 6;
-
-  if ($(".hero-portrait-image.orange").length < limit) {
+//first pick
+ if ($(".hero-portrait-image.orange").length < limit) {
     $(this).toggleClass("orange");
   } else {
     $(this).css("background-color", "grey");
@@ -53,7 +53,7 @@ $(document.body).on("click", ".click-map-select", function(event) {
 
 //get map value
 var mapSelect;
-$(document.body).on("click", "#dropdown-map li a", function(){
+$(document.body).on("click", "#dropdown-map li a", function() {
   event.preventDefault();
   $(this).parents(".btn-group").find('.selection').text($(this).text());
 
@@ -64,7 +64,7 @@ $(document.body).on("click", "#dropdown-map li a", function(){
 
 //get attack/defend value
 var position;
-$(document.body).on("click", "#map-select-position .btn", function(){
+$(document.body).on("click", "#map-select-position .btn", function() {
   event.preventDefault();
 
   //this gets the value attr when selected
@@ -74,7 +74,7 @@ $(document.body).on("click", "#map-select-position .btn", function(){
 
 //get win/lose value
 var result;
-$(document.body).on("click", "#map-select-result .btn", function(){
+$(document.body).on("click", "#map-select-result .btn", function() {
   event.preventDefault();
 
   //this gets the value attr when selected
@@ -84,14 +84,14 @@ $(document.body).on("click", "#map-select-result .btn", function(){
 
 //The FINAL ENTRY ROUND SUBMISSION
 //needs to add the data from win/loss, atk/defend, map type, map area
-$('#entry-submit').on('click', function(event){
-    event.preventDefault();
-    //gets team comp
-    var teamComp=[];
-    $('.hero-portrait-image.orange').each(function(){
-        teamComp.push($(this).attr("name"));
-    });
-    console.log(teamComp);
+$('#entry-submit').on('click', function(event) {
+  event.preventDefault();
+  //gets team comp
+  var teamComp = [];
+  $('.hero-portrait-image.orange').each(function() {
+    teamComp.push($(this).attr("name"));
+  });
+  console.log(teamComp);
 
 
 });
