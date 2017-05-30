@@ -7,24 +7,22 @@
 
 // Requiring our models
 var db = require("../models");
-var loginController  = require('./../controllers/login_controller.js');
+var loginController = require('./../controllers/login_controller.js');
 // Routes
 // =============================================================
 module.exports = function(app) {
-
-
-
   // GET route for getting all of the Users
   app.get("/api/user", loginController.saveUser);
   app.get("/api/", function(req, res) {
     var query = {};
-    if (req.query.user_id){
+    if (req.query.user_id) {
       query.UserId = req.query.user_id;
     }
     // findAll returns all entries for a table when used with no options
     db.Round.findAll({
       where: query,
-      include: [db.user]}).then(function(dbRound) {
+      include: [db.user]
+    }).then(function(dbRound) {
       // We have access to the Users as an argument inside of the callback function
       res.json(dbRound);
     });
@@ -45,6 +43,23 @@ module.exports = function(app) {
     });
   });
 
+  app.post("/api/entry/", function(req, res) {
+      console.log(req);
+      var obj = {
+        attack: req.body.position,
+        victory: req.body.result,
+        map_type: req.body.mapType,
+        map_name: req.body.mapSelect
+      };
+
+      req.body.teamComp.forEach(function(element) {
+        obj[element] = true;
+      });
+
+      db.Round.create(obj).then(function(data) {
+        res.json(data);
+      });
+    });
   // DELETE route for deleting Users. We can get the id of the User to be deleted from
   // req.params.id
   app.delete("/api/Users/:id", function(req, res) {
@@ -78,36 +93,38 @@ module.exports = function(app) {
   });
 
 
-    app.get("/api/hero/:id", function(req, res) {
-        db.Hero.findOne({
-            // where: { req.params.id },
-            include: [db.User]
-        }).then(function(dbHero) {
-            res.json(dbHero);
-        });
+  app.get("/api/hero/:id", function(req, res) {
+    db.Hero.findOne({
+      // where: { req.params.id },
+      include: [db.User]
+    }).then(function(dbHero) {
+      res.json(dbHero);
     });
+  });
 
-    app.get("/api/pick/:char1?/:char2?/:char3?/:char4?/:char5?", function(req, res) {
-        var queryObj = {};
-        if (req.params.char1) {
-            queryObj[req.params.char1] = true;
-        }
-        if (req.params.char2) {
-            queryObj[req.params.char2] = true;
-        }
-        if (req.params.char3) {
-            queryObj[req.params.char3] = true;
-        }
-        if (req.params.char4) {
-            queryObj[req.params.char4] = true;
-        }
-        if (req.params.char5) {
-            queryObj[req.params.char5] = true;
-        }
+  app.get("/api/pick/:char1?/:char2?/:char3?/:char4?/:char5?", function(req, res) {
+    var queryObj = {};
+    if (req.params.char1) {
+      queryObj[req.params.char1] = true;
+    }
+    if (req.params.char2) {
+      queryObj[req.params.char2] = true;
+    }
+    if (req.params.char3) {
+      queryObj[req.params.char3] = true;
+    }
+    if (req.params.char4) {
+      queryObj[req.params.char4] = true;
+    }
+    if (req.params.char5) {
+      queryObj[req.params.char5] = true;
+    }
 
-        db.Round.findAll({ where: queryObj }).then(function(data) {
-            res.json(data);
-        });
+    db.Round.findAll({
+      where: queryObj
+    }).then(function(data) {
+      res.json(data);
     });
+  });
 
 };

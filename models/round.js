@@ -1,4 +1,4 @@
-module.exports= function(sequelize, DataType){
+module.exports= function(sequelize, DataTypes){
 	var Round = sequelize.define("Round", {
 			Genji: {type:DataTypes.BOOLEAN, default: false},
 			McCree: {type:DataTypes.BOOLEAN, default: false},
@@ -25,11 +25,12 @@ module.exports= function(sequelize, DataType){
 			Symmetra: {type:DataTypes.BOOLEAN, default: false},
 			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
+
 			attack: {type:DataTypes.BOOLEAN, default: true},
 			victory:  {type:DataTypes.BOOLEAN, default: true}
 
 		}
-	},
+	,
     {
       // We're saying that we want our User to have Round
       classMethods: {
@@ -65,8 +66,6 @@ module.exports= function(sequelize, DataType){
           });
         }
       }
-    }
-
-	);
+    });
 	return Round;
 };

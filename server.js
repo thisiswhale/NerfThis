@@ -12,10 +12,7 @@ var express = require("express"), app = express();
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var path = require('path');
-var logger = require('morgan');
-var session = require('express-session');
-var dotenv = require('dotenv');
-// var session = require('express-session');
+
 
 // Sets up the Express App
 // =============================================================
@@ -25,7 +22,6 @@ var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 var db = require("./models");
-var user = require('./routes/user')(app);
 var routes = require("./routes/html-routes.js")(app);
 var apiRoutes = require("./routes/api-routes.js")(app);
 // Requiring our models for syncing
@@ -38,6 +34,8 @@ app.set('view engine', 'html');
 // app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // app.use(session({
 //     secret: 'shhhhhhhhh',
 //     resave: true,

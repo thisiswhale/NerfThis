@@ -1,4 +1,4 @@
-var bcrypt = require('bcryptjs');
+var bcrypt = require('bcrypt');
 var db = require('./../models');
 
 module.exports = {
@@ -27,4 +27,3 @@ module.exports = {
     })
   }
 }
-
