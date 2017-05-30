@@ -17,14 +17,14 @@ module.exports = function(app) {
         db.Round.findAll({
             where: query,
             include: [db.User]
-        }).then(fucntion(dbRound) {
+        }).then(function(dbRound) {
             res.json(dbRound);
         });
     });
 
     app.get("/api/hero/:id", function(req, res) {
         db.Hero.findOne({
-            where: { idL req.params.id },
+            // where: { req.params.id },
             include: [db.User]
         }).then(function(dbHero) {
             res.json(dbHero);
@@ -54,4 +54,4 @@ module.exports = function(app) {
         });
     });
 
-}
+};
