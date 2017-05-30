@@ -1,0 +1,28 @@
+#char-suggest {
+    background-color: lemonchiffon;
+    padding: 30px;
+    border: 1.5px #222 solid;
+    border-radius: 10px;
+    margin: 4% 0 10px;
+    height: 373.5px;
+}
+
+#menu-select {
+    background-color: lemonchiffon;
+    padding: 30px;
+    border: 1.5px #222 solid;
+    border-radius: 10px;
+    margin: 4% 0 10px;
+}
+
+#heroPic {
+    padding-top: 50px;
+    height: 200px;
+    border: 1px black solid;
+    visibility: hidden;
+    background-color: orange;
+}
+
+#round-select-menu {
+    margin: 10px 0px 0px 0px;
+}

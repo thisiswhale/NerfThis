@@ -13,6 +13,7 @@ var db = require("../models");
 module.exports = function(app) {
 
 
+
   // GET route for getting all of the Users
   app.get("/api/Users", function(req, res) {
     // findAll returns all entries for a table when used with no options
@@ -68,5 +69,38 @@ module.exports = function(app) {
       res.json(dbUser);
     });
   });
+
+
+    app.get("/api/hero/:id", function(req, res) {
+        db.Hero.findOne({
+            // where: { req.params.id },
+            include: [db.User]
+        }).then(function(dbHero) {
+            res.json(dbHero);
+        });
+    });
+
+    app.get("/api/pick/:char1?/:char2?/:char3?/:char4?/:char5?", function(req, res) {
+        var queryObj = {};
+        if (req.params.char1) {
+            queryObj[req.params.char1] = true;
+        }
+        if (req.params.char2) {
+            queryObj[req.params.char2] = true;
+        }
+        if (req.params.char3) {
+            queryObj[req.params.char3] = true;
+        }
+        if (req.params.char4) {
+            queryObj[req.params.char4] = true;
+        }
+        if (req.params.char5) {
+            queryObj[req.params.char5] = true;
+        }
+
+        db.Round.findAll({ where: queryObj }).then(function(data) {
+            res.json(data);
+        });
+    });
 
 };
