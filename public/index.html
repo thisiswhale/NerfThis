@@ -131,7 +131,10 @@
 													<input type="text" name="username" id="new-username" tabindex="1" class="form-control" placeholder="Username" value="" required="required">
 												</div>
 												<div class="form-group">
+
 													<input type="email" name="email" id="new-email" tabindex="1" class="form-control" placeholder="Email Address" value="" required="required">
+
+
 												</div>
 
 												<div class="form-group">
@@ -173,29 +176,6 @@
 	<script type="text/javascript" src="./js/index.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<!-- <script>
-    var auth0 = new auth0.WebAuth({
-      domain: '#{env.AUTH0_DOMAIN}',
-      clientID: '#{env.AUTH0_CLIENT_ID}',
-      redirectUri: '#{env.AUTH0_CALLBACK_URL}'
-    });
-
-    function signinGoogle() {
-      auth0.authorize({
-        connection: 'google-oauth2',
-        responseType: 'code'
-      });
-    }
-
-    function signinDb() {
-      auth0.redirect.loginWithCredentials({
-        connection: 'Username-Password-Authentication',
-        username: document.getElementById('username').value,
-        password: document.getElementById('password').value,
-        responseType: 'code'
-      });
-    }
-    </script> -->
 </body>
 
 </html>

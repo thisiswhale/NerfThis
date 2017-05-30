@@ -17,7 +17,8 @@ $(document).ready(function() {
 
   $("#register-submit").on("click", function(event) {
 
-    var userName = $("#new-username").val().trim();
+
+    var userNames = $("#new-username").val().trim();
     var emailAdress = $("#new-email").val().trim();
     var password = $("#new-password").val().trim();
     var comfoPassword = $("#confirm-password").val().trim();
@@ -29,23 +30,25 @@ $(document).ready(function() {
       passportNotSame = true;
     }
 
-    console.log(userName);
-        console.log(emailAdress);
-            console.log(passportNotSame == true);
+
+    console.log(userNames);
+    console.log(emailAdress);
+    console.log(passportNotSame == true);
     event.preventDefault();
-    if (userName == null || emailAdress == null || passportNotSame == false) {
+    if (userNames == null || emailAdress == null || passportNotSame == false) {
       return;
     }
     var newUser = {
-      userName: userName,
+      userName: userNames,
       email: emailAdress,
       password: password
     }
     console.log(newUser);
 
-    // $.post("/api/user", newUser).done(function(data) {
-    //   console.log(data)
-    // });
+
+    $.post("/api/Users", newUser).done(function(data) {
+      console.log(data)
+    });
 
   });
 
