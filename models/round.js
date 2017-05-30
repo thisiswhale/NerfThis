@@ -1,34 +1,33 @@
 module.exports= function(sequelize, DataType){
-	var Rounnd = sequelize.define("Round", {
-		round: {
-			Genji: DataTypes.BOOLEAN DEFAULT false,
-			McCree: DataTypes.BOOLEAN DEFAULT false,
-			Pharah: DataTypes.BOOLEAN DEFAULT false,
-			Reaper: DataTypes.BOOLEAN DEFAULT false,
-			Soldier76: DataTypes.BOOLEAN DEFAULT false,
-			Sombra: DataTypes.BOOLEAN DEFAULT false,
-			Tracer: DataTypes.BOOLEAN DEFAULT false,
-			Bastion: DataTypes.BOOLEAN DEFAULT false,
-			Hanzo: DataTypes.BOOLEAN DEFAULT false,
-			Junkrat: DataTypes.BOOLEAN DEFAULT false,
-			Mei: DataTypes.BOOLEAN DEFAULT false,
-			Torbjorn: DataTypes.BOOLEAN DEFAULT false,
-			Widowmaker: DataTypes.BOOLEAN DEFAULT false,
-			DVa: DataTypes.BOOLEAN DEFAULT false,
-			Orisa: DataTypes.BOOLEAN DEFAULT false,
-			Reinhardt: DataTypes.BOOLEAN DEFAULT false,
-			Roadhog: DataTypes.BOOLEAN DEFAULT false,
-			Winston: DataTypes.BOOLEAN DEFAULT false,
-			Zarya: DataTypes.BOOLEAN DEFAULT false,
-			Ana: DataTypes.BOOLEAN DEFAULT false,
-			Lucio: DataTypes.BOOLEAN DEFAULT false,
-			Mercy: DataTypes.BOOLEAN DEFAULT false,
-			Symmetra: DataTypes.BOOLEAN DEFAULT false,
-			Zenyatta: DataTypes.BOOLEAN DEFAULT false,
+	var Round = sequelize.define("Round", {
+			Genji: {type:DataTypes.BOOLEAN, default: false},
+			McCree: {type:DataTypes.BOOLEAN, default: false},
+			Pharah: {type:DataTypes.BOOLEAN, default: false},
+			Reaper: {type:DataTypes.BOOLEAN, default: false},
+			Soldier76: {type:DataTypes.BOOLEAN, default: false},
+			Sombra: {type:DataTypes.BOOLEAN, default: false},
+			Tracer: {type:DataTypes.BOOLEAN, default: false},
+			Bastion: {type:DataTypes.BOOLEAN, default: false},
+			Hanzo: {type:DataTypes.BOOLEAN, default: false},
+			Junkrat: {type:DataTypes.BOOLEAN, default: false},
+			Mei: {type:DataTypes.BOOLEAN, default: false},
+			Torbjorn: {type:DataTypes.BOOLEAN, default: false},
+			Widowmaker: {type:DataTypes.BOOLEAN, default: false},
+			DVa: {type:DataTypes.BOOLEAN, default: false},
+			Orisa: {type:DataTypes.BOOLEAN, default: false},
+			Reinhardt: {type:DataTypes.BOOLEAN, default: false},
+			Roadhog: {type:DataTypes.BOOLEAN, default: false},
+			Winston: {type:DataTypes.BOOLEAN, default: false},
+			Zarya: {type:DataTypes.BOOLEAN, default: false},
+			Ana: {type:DataTypes.BOOLEAN, default: false},
+			Lucio: {type:DataTypes.BOOLEAN, default: false},
+			Mercy: {type:DataTypes.BOOLEAN, default: false},
+			Symmetra: {type:DataTypes.BOOLEAN, default: false},
+			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
-			attack: DataTypes.BOOLEAN DEFAULT true,
+			attack: {type:DataTypes.BOOLEAN, default: true},
 
-			win: DataTypes.BOOLEAN DEFAULT true	
+			victory:  {type:DataTypes.BOOLEAN, default: true},
 		}
 	},
     {
@@ -69,5 +68,5 @@ module.exports= function(sequelize, DataType){
     }
 
 	);
-	return User;
+	return Round;
 };
