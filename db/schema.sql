@@ -4,6 +4,7 @@ USE Overwatch;
 CREATE TABLE user(
 	id AUTO_INCREMENT NOT NULL,
 	name VARCHAR(50) NOT NULL,
+	email VARCHAR(50) NOT NULL,
 	password VARCHAR(10) NOT NULL
 	PRIMARY KEY (id)
 );
