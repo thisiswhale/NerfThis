@@ -7,7 +7,7 @@
 
 // Requiring our models
 var db = require("../models");
-
+var loginController  = require('./../controllers/login_controller.js');
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -15,11 +15,18 @@ module.exports = function(app) {
 
 
   // GET route for getting all of the Users
-  app.get("/api/Users", function(req, res) {
+  app.get("/api/user", loginController.saveUser);
+  app.get("/api/", function(req, res) {
+    var query = {};
+    if (req.query.user_id){
+      query.UserId = req.query.user_id;
+    }
     // findAll returns all entries for a table when used with no options
-    db.User.findAll({}).then(function(dbUser) {
+    db.Round.findAll({
+      where: query,
+      include: [db.user]}).then(function(dbRound) {
       // We have access to the Users as an argument inside of the callback function
-      res.json(dbUser);
+      res.json(dbRound);
     });
   });
 

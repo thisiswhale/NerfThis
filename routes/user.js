@@ -5,8 +5,8 @@ var router = express.Router();
 
 module.exports = function(app){
 
-router.get('/', ensureLoggedIn, function(req, res, next) {
-  res.render('user', { user: req.user });
-});
+// router.get('/', ensureLoggedIn, function(req, res, next) {
+//   res.render('user', { user: req.user });
+// });
 
-}
+// }
