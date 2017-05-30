@@ -27,7 +27,7 @@ module.exports= function(sequelize, DataType){
 
 			attack: {type:DataTypes.BOOLEAN, default: true},
 
-			victory:  {type:DataTypes.BOOLEAN, default: true},
+			victory:  {type:DataTypes.BOOLEAN, default: true}
 		}
 	},
     {
