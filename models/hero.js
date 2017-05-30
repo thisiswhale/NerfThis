@@ -1,7 +1,9 @@
 module.exports= function(sequelize, DataType){
 	var Hero = sequelize.define("Hero", {
-		name: DataTypes.STRING,
-		portrait: DataTypes.STRING
+		hero: {
+			name: DataTypes.STRING,
+			portrait: DataTypes.STRING
+		}
 	},
 	{
       // ROUND We're saying that we want our Round to have Hero
