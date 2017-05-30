@@ -1,5 +1,6 @@
 module.exports= function(sequelize, DataType){
 	var Round = sequelize.define("Round", {
+
 			Genji: {type:DataTypes.BOOLEAN, default: false},
 			McCree: {type:DataTypes.BOOLEAN, default: false},
 			Pharah: {type:DataTypes.BOOLEAN, default: false},
@@ -25,8 +26,11 @@ module.exports= function(sequelize, DataType){
 			Symmetra: {type:DataTypes.BOOLEAN, default: false},
 			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
-			attack: {type:DataTypes.BOOLEAN, default: true},
-			victory:  {type:DataTypes.BOOLEAN, default: true}
+      mapType: {type: DataTypes.STRING},
+      mapName: {type: DataTypes.STRING},  
+
+			attack: {type:DataTypes.BOOLEAN, default: false},
+			victory:  {type:DataTypes.BOOLEAN, default: false}
 
 		}
 	},
@@ -43,30 +47,6 @@ module.exports= function(sequelize, DataType){
         }
       }
     },
-            {
-      // MAPS We're saying that we want our Round to have Map
-      classMethods: {
-        associate: function(models) {
-
-          Round.hasMany(models.Map, {
-            onDelete: "cascade"
-          });
-        }
-      }
-    },
-    {
-      // HEROES We're saying that we want our Round to have Hero
-      classMethods: {
-        associate: function(models) {
-          // Associating Round with Hero
-          // When an Round is deleted, also delete any associated Hero
-          Round.hasMany(models.Hero, {
-            onDelete: "cascade"
-          });
-        }
-      }
-    }
-
 	);
 	return Round;
 };
