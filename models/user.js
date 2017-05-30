@@ -1,24 +1,28 @@
-module.exports= function(sequelize, DataType){
-	var User = sequelize.define("User", {
-		user: {
-			name: DataTypes.STRING,
-			password: DataTypes.STRING		
+module.exports = function(sequelize,DataTypes){
+	var User = sequelize.define("User",{
+		userName:{
+			type:DataTypes.STRING,
+			allowNull:false,
+			validate: {
+			len: [2,100]
 		}
-	},
-	{
-      // We're saying that we want our User to have Round
-      classMethods: {
-        associate: function(models) {
-          // An User (foreignKey) is required or a Round can't be made
-          Round.belongsTo(models.User, {
-            foreignKey: {
-              allowNull: false
-            }
-          });
-        }
-      }
-    }
+		},
+		email:{
+			type: DataTypes.TEXT,
+      		allowNull: false,
+					validate: {
+					isEmail:true,
+					len: [2,100]
+				}
+		},
+		password:{
+			type: DataTypes.TEXT,
+			allowNull:false,
+			validate: {
+			len: [2,100]
+		}
+		}
 
-	);
+	});
 	return User;
-};
+}
