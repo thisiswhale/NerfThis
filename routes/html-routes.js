@@ -17,8 +17,18 @@ var env = {
 module.exports = function(app) {
 
     app.get("/", function(req, res) {
-        res.sendFile(path.join(__dirname, "../views/index.html"));
+        res.sendFile(path.join(__dirname, "../public/index.html"));
     });
+    app.get("/dashboard", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/dashboard.html"));
+    });    
+    app.get("/entry", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/user-entry.html"));
+    });    
+//     app.get("/about", function(req, res){
+//         res.sendFile(path.join(__dirname, "../public/about.html"));
+//     });    
+
 
     /* GET home page. */
     router.get('/', function(req, res, next) {
