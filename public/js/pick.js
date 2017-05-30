@@ -36,15 +36,21 @@ function teamParse(char1, char2, char3, char4, char5) {
 
         if (data.length > 0) {
 
-            for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i <= data.length; i++) {
                 var currentArr = dbToArr(data[i]);
-                for (var j = 0; j < currentArr.length; j++) {
-                    if (currentArr[j].indexOf(charArray) === -1) {
-                        resultsArr.push(currentArr[j]);
+                if (i === data.length) {
+                    var heroPic = heroCounter(resultsArr);
+                    var picURL = "https://blzgdapipro-a.akamaihd.net/hero/" + heroPic + "/icon-portrait.png";
+                    var hName = heroPic.charAt(0).toUpperCase() + heroPic.slice(1);
+                    $("#heroPic").attr("src", picURL);
+                    $("#heroPic").css("visibility", "visible");
+                    $("#heroName").html("<h4>" + hName + "</h4>");
+                } else {
+                    for (var j = 0; j < currentArr.length; j++) {
+                        if (currentArr[j].indexOf(charArray) === -1) {
+                            resultsArr.push(currentArr[j]);
+                        }
                     }
-                }
-                if (i === data.length - 1) {
-                    heroCounter(resultsArr);
                 }
             }
 
@@ -110,6 +116,7 @@ function heroCounter(arr) {
 
 // From user-entry
 
+//Changed limit to 5
 //enables to change hero's portrait background color
 $(".hero-portrait-image").click(function() {
     event.preventDefault();
