@@ -5,7 +5,11 @@
 // Dependencies
 // =============================================================
 var path = require("path");
-
+var express = require('express');
+app = express()
+var passport = require('passport');
+// var router = express.Router();
+var requireRole = require('../requireRole');
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -32,14 +36,14 @@ module.exports = function(app) {
         });
     });
 
-    router.get('/login',
+    app.get('/login',
         function(req, res) {
             res.render('login', {
                 env: env
             });
         });
-
-    router.get('/logout', function(req, res) {
+    
+    app.get('/logout', function(req, res) {
         req.logout();
         res.redirect('/');
     });
