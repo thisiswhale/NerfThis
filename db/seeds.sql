@@ -52,3 +52,169 @@ INSERT INTO heroes (name, portrait) VALUES ('Symmetra', 'https://blzgdapipro-a.a
 INSERT INTO heroes (name, portrait) VALUES ('Zenyatta', 'https://blzgdapipro-a.akamaihd.net/hero/zenyatta/icon-portrait.png');
 
 
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, true, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (true, true, true, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, false);
+
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true,  
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, true, true, true,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, true, true, true,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true,
+true, true);
+
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true,  
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true,
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, false, true, true, true, true,
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, true, true, true,
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true,
+false, true);
+
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, false, false, false, false,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false,
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, 
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, 
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, 
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, false, false, false, false,
+false, false);
+
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, true, true, true, true, true,  false, false, false, false, false, false, false, false, false, false, false, false, 
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false,
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false,  false, true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false,
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, 
+false, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES (false, false, false, false, false, false, false, true, true, true, true, true,  false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false,
+true, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) VALUES ( false, false, false, false, false,  false, true, false, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false,
+true, true);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) 
+VALUES ( false, false, false, false, false, false, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, false);
+
+INSERT INTO round (
+Genji, McCree, Pharah, Reaper, Soldier76, Sombra, Tracer, Bastion, Hanzo, Junkrat, Mei, Torbjorn, Widowmaker, DVa, Orisa, Reinhardt, Roadhog, Winston, Zarya, Ana, Lucio, Mercy, Symmetra, Zenyatta, attack, win) 
+VALUES ( false, false, false, false, false, false, true, true, true, true, false, true, false, false, false, false, false, false, false, false, false, false, false, false, 
+true, true);
