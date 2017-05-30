@@ -212,5 +212,17 @@ $('#entry-submit').on('click', function(event) {
     });
     console.log(teamComp);
 
+    if (teamComp.length === 1) {
+        teamParse(teamComp[0], 'none', 'none', 'none', 'none');
+    } else if (teamComp.length === 2) {
+        teamParse(teamComp[0], teamComp[1], 'none', 'none', 'none');
+    } else if (teamComp.length === 3) {
+        teamParse(teamComp[0], teamComp[1], teamComp[2], 'none', 'none');
+    } else if (teamComp.length === 4) {
+        teamParse(teamComp[0], teamComp[1], teamComp[2], teamComp[3], 'none');
+    } else if (teamComp.length === 4) {
+        teamParse(teamComp[0], teamComp[1], teamComp[2], teamComp[3], teamComp[4]);
+    }
+
 
 });
