@@ -8,7 +8,13 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var path = require('path');
-
+var express = require("express"), app = express();
+var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
+var path = require('path');
+var logger = require('morgan');
+var session = require('express-session');
+var dotenv = require('dotenv');
 // var session = require('express-session');
 
 // Sets up the Express App
