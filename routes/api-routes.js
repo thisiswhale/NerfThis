@@ -12,9 +12,6 @@ var loginController  = require('./../controllers/login_controller.js');
 // =============================================================
 module.exports = function(app) {
 
-
-
-  // GET route for getting all of the Users
   app.get("/api/user", loginController.saveUser);
   app.get("/api/", function(req, res) {
     var query = {};
@@ -30,11 +27,21 @@ module.exports = function(app) {
     });
   });
 
-  // POST route for saving a new User
+app.post("/api/returnUsers", function(req, res) {
+    console.log(JSON.stringify(req.body) + "this is one ");
+    db.User.findOne({
+      where: {
+        userName: req.body.userName,
+        password: req.body.password
+      }
+    }).then(function(dbUser) {
+      res.json(dbUser)
+    }).catch(function(err) {
+      res.json(err);
+    })
+  });
+
   app.post("/api/Users", function(req, res) {
-    // create takes an argument of an object describing the item we want to
-    // insert into our table. In this case we just we pass in an object with a text
-    // and complete property (req.body)
     db.User.create({
       userName: req.body.userName,
       email: req.body.email,
@@ -42,11 +49,23 @@ module.exports = function(app) {
     }).then(function(dbUser) {
       // We have access to the new User as an argument inside of the callback function
       res.json(dbUser);
-    });
+    }).catch(function(err) {
+      res.json(err)
+    })
   });
 
-  // DELETE route for deleting Users. We can get the id of the User to be deleted from
-  // req.params.id
+  app.get("/api/allUser",function(req,res) {
+    db.User.findAll({
+      userName: req.body.userName,
+      email: req.body.email,
+      password: req.body.password
+    }).then(function(dbUser){
+      res.json(dbUser);
+    }).catch(function(err){
+      res.json(err)
+    })
+  });
+
   app.delete("/api/Users/:id", function(req, res) {
     // We just have to specify which User we want to destroy with "where"
     db.User.destroy({
@@ -62,8 +81,6 @@ module.exports = function(app) {
   // PUT route for updating Users. We can get the updated User data from req.body
   app.put("/api/User", function(req, res) {
 
-    // Update takes in an object describing the properties we want to update, and
-    // we use where to describe which objects we want to update
     db.User.update({
       userName: req.body.username,
       email: req.body.email,
@@ -77,15 +94,6 @@ module.exports = function(app) {
     });
   });
 
-
-    app.get("/api/hero/:id", function(req, res) {
-        db.Hero.findOne({
-            // where: { req.params.id },
-            include: [db.User]
-        }).then(function(dbHero) {
-            res.json(dbHero);
-        });
-    });
 
     app.get("/api/pick/:char1?/:char2?/:char3?/:char4?/:char5?", function(req, res) {
         var queryObj = {};
