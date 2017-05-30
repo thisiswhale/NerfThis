@@ -5,7 +5,6 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
-var app = express();
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var path = require('path');
@@ -30,16 +29,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(session({
-    secret: 'shhhhhhhhh',
-    resave: true,
-    saveUninitialized: true
-}));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(session({
+//     secret: 'shhhhhhhhh',
+//     resave: true,
+//     saveUninitialized: true
+// }));
+// app.use(passport.initialize());
+// app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'views')));
 // app.use(app.router)(app);
 // routes.initialize(app);
