@@ -26,8 +26,8 @@ module.exports= function(sequelize, DataType){
 			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
 			attack: {type:DataTypes.BOOLEAN, default: true},
-
 			victory:  {type:DataTypes.BOOLEAN, default: true}
+
 		}
 	},
     {
