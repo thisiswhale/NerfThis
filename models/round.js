@@ -1,5 +1,5 @@
 module.exports= function(sequelize, DataType){
-	var Rounnd = sequelize.define("Round", {
+	var Round = sequelize.define("Round", {
 		round: {
 			Genji: DataTypes.BOOLEAN DEFAULT false,
 			McCree: DataTypes.BOOLEAN DEFAULT false,

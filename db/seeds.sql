@@ -1,5 +1,4 @@
 INSERT INTO user (name, password) VALUES ('Kat', '1234');
-
 INSERT INTO user (name, password) VALUES ('Will', '2345');
 INSERT INTO user (name, password) VALUES ('Kuku', '3456');
 INSERT INTO user (name, password) VALUES ('Eric', '4567');
