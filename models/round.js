@@ -30,6 +30,20 @@ module.exports= function(sequelize, DataTypes){
       		mapName: {type: DataTypes.STRING},
 			attack: {type:DataTypes.BOOLEAN, default: true},
 			victory:  {type:DataTypes.BOOLEAN, default: true}
-		});
+		},
+		{
+      // We're saying that we want our User to have Round
+      classMethods: {
+        associate: function(models) {
+          // An User (foreignKey) is required or a Round can't be made
+          Round.belongsTo(models.User, {
+            foreignKey: {
+              allowNull: false
+            }
+          });
+        }
+      }
+    }
+   );
 	return Round;
 };
