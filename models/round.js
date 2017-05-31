@@ -33,20 +33,21 @@ module.exports= function(sequelize, DataTypes){
 		
 			attack: {type:DataTypes.BOOLEAN, defaultValue: true},
 			victory:  {type:DataTypes.BOOLEAN, defaultValue: true}
-		},
-		{
-      // We're saying that we want our User to have Round
-    	classMethods: {
-        	associate: function(models) {
-          // An User (foreignKey) is required or a Round can't be made
-          	Round.belongsTo(models.User, {
-            		foreignKey: {
-              			allowNull: true
-            		}
-          	});
-        	}
-      	}
-    		}
+		}
+// 				     ,
+// 		{
+//       // We're saying that we want our User to have Round
+//     	classMethods: {
+//         	associate: function(models) {
+//           // An User (foreignKey) is required or a Round can't be made
+//           	Round.belongsTo(models.User, {
+//             		foreignKey: {
+//               			allowNull: true
+//             		}
+//           	});
+//         	}
+//       	}
+//     		}
    );
 	return Round;
 };
