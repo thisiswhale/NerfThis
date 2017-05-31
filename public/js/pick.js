@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Pick Code
 
-    var heroes = ['Genji', 'McCree', 'Pharah', 'Reaper', 'Soldier76', 'Sombra', 'Tracer', 'Bastion', 'Hanzo', 'Junkrat', 'Mei', 'Torbjorn', 'Widowmaker', 'DVa', 'Orisa', 'Reinhardt', 'Roadhog', 'Winston', 'Zarya', 'Ana', 'Lucio', 'Mercy', 'Symmetra', 'Zenyatta'];
+    var heroes = ['Genji', 'McCree', 'Pharah', 'Reaper', 'Soldier76', 'Sombra', 'Tracer', 'Bastion', 'Hanzo', 'Junkrat', 'Mei', 'Torbjorn', 'Widowmaker', 'Dva', 'Orisa', 'Reinhardt', 'Roadhog', 'Winston', 'Zarya', 'Ana', 'Lucio', 'Mercy', 'Symmetra', 'Zenyatta'];
     var charArray = [];
     // connection.query('SELECT * WHERE char1 = true, char2 = true, char3 = true, char4=true, char5 = true;', 
     function teamParse(char1, char2, char3, char4, char5) {
@@ -44,8 +44,10 @@ $(document).ready(function() {
                         var heroPic = heroCounter(resultsArr);
                         var hName = heroPic;
                         var picName = heroPic.charAt(0).toLowerCase() + heroPic.slice(1);
-                        if (hName === Soldier76) {
+                        if (hName === "Soldier76") {
                             var picURL = "https://blzgdapipro-a.akamaihd.net/hero/soldier-76/icon-portrait.png";
+                        } else if (hName === "McCree") {
+                            var picURL = "https://blzgdapipro-a.akamaihd.net/hero/mccree/icon-portrait.png";
                         } else {
                             var picURL = "https://blzgdapipro-a.akamaihd.net/hero/" + picName + "/icon-portrait.png";
                         }

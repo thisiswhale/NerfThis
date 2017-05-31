@@ -19,10 +19,19 @@ module.exports = function(sequelize,DataTypes){
 			type: DataTypes.TEXT,
 			allowNull:false,
 			validate: {
-			len: [2,100]
+				len: [2,100]
+			}
 		}
-		}
-
-	});
-	return User;
-}
+	}
+// 				    ,
+// 	{ classMethods:{
+//         	associate: function(models) {
+//             		User.hasMany(models.Round, {
+//             		onDelete: "cascade"
+//          		});
+//         	}
+//       	}
+// 	}
+				   );
+		return User;
+    };

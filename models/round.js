@@ -32,5 +32,6 @@ module.exports= function(sequelize, DataTypes){
 			attack: {type:DataTypes.BOOLEAN, defaultValue: true},
 			victory:  {type:DataTypes.BOOLEAN, defaultValue: true}
 		});
+
 	return Round;
 };
