@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "poke2511",
-    "database": "Overwatch",
+    "password": "12345",
+    "database": "userInformation_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -15,8 +15,8 @@
   },
   "production": {
     "username": "root",
-    "password": "poke2511",
-    "database": "Overwatch",
+    "password": "12345",
+    "database": "userInformation_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
