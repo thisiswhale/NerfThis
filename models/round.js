@@ -26,8 +26,10 @@ module.exports= function(sequelize, DataTypes){
 			Symmetra: {type:DataTypes.BOOLEAN, defaultValue: false},
 			Zenyatta: {type:DataTypes.BOOLEAN, defaultValue: false},
 
-			mapType: {type: DataTypes.STRING},
-      			mapName: {type: DataTypes.STRING},
+			mapType: {type: DataTypes.STRING,
+				  defaultValue: "NA"},
+      			mapName: {type: DataTypes.STRING,
+				 defaultValue: "NA"},
 		
 			attack: {type:DataTypes.BOOLEAN, defaultValue: true},
 			victory:  {type:DataTypes.BOOLEAN, defaultValue: true}
