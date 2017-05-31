@@ -104,6 +104,66 @@ module.exports = function(app) {
   });
 
 
+
+// =========================POST for entry game record ============================
+  app.post("/api/entry", function(req, res) {
+    console.log("hello");
+      console.log(JSON.stringify(req.body));
+      var obj = {
+        attack: req.body.position,
+        victory: req.body.result,
+        map_type: req.body.mapType,
+        map_name: req.body.mapSelect
+      };
+
+      req.body.teamComp.forEach(function(element) {
+        obj[element] = true;
+      });
+      console.log(obj);
+      db.Round.create(obj).then(function(data) {
+        res.json(data);
+      });
+    });
+
+  // DELETE route for deleting Users. We can get the id of the User to be deleted from
+  // req.params.id
+  app.delete("/api/Users/:id", function(req, res) {
+    // We just have to specify which User we want to destroy with "where"
+    db.User.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbUser) {
+      res.json(dbUser);
+    });
+
+  });
+
+  // PUT route for updating Users. We can get the updated User data from req.body
+  app.put("/api/User", function(req, res) {
+
+    db.User.update({
+      userName: req.body.username,
+      email: req.body.email,
+      password: req.body.password
+    }, {
+      where: {
+        id: req.body.id
+      }
+    }).then(function(dbUser) {
+      res.json(dbUser);
+    });
+  });
+
+  app.get("/api/hero/:id", function(req, res) {
+    db.Hero.findOne({
+      // where: { req.params.id },
+      include: [db.User]
+    }).then(function(dbHero) {
+      res.json(dbHero);
+    });
+  });
+
   app.get("/api/pick/:char1?/:char2?/:char3?/:char4?/:char5?", function(req, res) {
     var queryObj = {};
     if (req.params.char1) {
