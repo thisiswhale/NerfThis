@@ -25,47 +25,10 @@ module.exports= function(sequelize, DataTypes){
 			Symmetra: {type:DataTypes.BOOLEAN, default: false},
 			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
-
+			mapType: {type: DataTypes.STRING},
+      mapName: {type: DataTypes.STRING},
 			attack: {type:DataTypes.BOOLEAN, default: true},
 			victory:  {type:DataTypes.BOOLEAN, default: true}
-
-		}
-	,
-    {
-      // We're saying that we want our User to have Round
-      classMethods: {
-        associate: function(models) {
-          // An User (foreignKey) is required or a Round can't be made
-          Round.belongsTo(models.User, {
-            foreignKey: {
-              allowNull: false
-            }
-          });
-        }
-      }
-    },
-            {
-      // MAPS We're saying that we want our Round to have Map
-      classMethods: {
-        associate: function(models) {
-
-          Round.hasMany(models.Map, {
-            onDelete: "cascade"
-          });
-        }
-      }
-    },
-    {
-      // HEROES We're saying that we want our Round to have Hero
-      classMethods: {
-        associate: function(models) {
-          // Associating Round with Hero
-          // When an Round is deleted, also delete any associated Hero
-          Round.hasMany(models.Hero, {
-            onDelete: "cascade"
-          });
-        }
-      }
-    });
+		});
 	return Round;
 };

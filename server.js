@@ -32,10 +32,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 // app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
 // app.use(session({
 //     secret: 'shhhhhhhhh',
 //     resave: true,
@@ -43,7 +40,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // }));
 // app.use(passport.initialize());
 // app.use(passport.session());
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public')));
 // app.use(app.router)(app);
 // routes.initialize(app);
 

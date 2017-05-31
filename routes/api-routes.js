@@ -43,23 +43,26 @@ module.exports = function(app) {
     });
   });
 
-  app.post("/api/entry/", function(req, res) {
-      console.log(req);
-      var obj = {
-        attack: req.body.position,
-        victory: req.body.result,
-        map_type: req.body.mapType,
-        map_name: req.body.mapSelect
-      };
+// =========================POST for entry game record ============================
+  // app.post("/api/entry", function(req, res) {
+  //   console.log("hello");
+  //     console.log(JSON.stringify(req.body));
+  //     var obj = {
+  //       attack: req.body.position,
+  //       victory: req.body.result,
+  //       map_type: req.body.mapType,
+  //       map_name: req.body.mapSelect
+  //     };
+  //
+  //     req.body.teamComp.forEach(function(element) {
+  //       obj[element] = true;
+  //     });
+  //     console.log(obj);
+  //     db.Round.create(obj).then(function(data) {
+  //       res.json(data);
+  //     });
+  //   });
 
-      req.body.teamComp.forEach(function(element) {
-        obj[element] = true;
-      });
-
-      db.Round.create(obj).then(function(data) {
-        res.json(data);
-      });
-    });
   // DELETE route for deleting Users. We can get the id of the User to be deleted from
   // req.params.id
   app.delete("/api/Users/:id", function(req, res) {

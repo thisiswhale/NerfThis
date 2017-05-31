@@ -101,10 +101,9 @@ $(document).ready(function() {
       position: position,
       mapType: mapType,
       mapSelect: mapSelect
-    }
+    };
     console.log(userEntry);
-    $.post("/api/entry/", userEntry).done(function(data) {
-      console.log("Hello");
+    $.post("/api/entry", userEntry).done(function(data) {
       console.log(data);
     });
 
