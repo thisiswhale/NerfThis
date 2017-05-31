@@ -11,8 +11,6 @@ var methodOverride = require("method-override");
 var path = require('path');
 
 
-// var session = require('express-session');
-
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -21,10 +19,43 @@ var PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 var db = require("./models");
-var user = require('./routes/user')(app);
 var routes = require("./routes/html-routes.js")(app);
 var apiRoutes = require("./routes/api-routes.js")(app);
 
+// app.use(logger('dev'));
+
+// app.use(session({
+//     secret: 'shhhhhhhhh',
+//     resave: true,
+//     saveUninitialized: true
+// }));
+// app.use(passport.initialize());
+// app.use(passport.session());
+app.use(express.static(path.join(__dirname, 'public')));
+// app.use(app.router)(app);
+// routes.initialize(app);
+
+
+// if (app.get('env') === 'development') {
+//   app.use(function(err, req, res, next) {
+//     res.status(err.status || 500);
+//     res.render('error', {
+//       message: err.message,
+//       error: err
+//     });
+//   });
+// }
+
+// // production error handler
+// // no stacktraces leaked to user
+// app.use(function(err, req, res, next) {
+//   res.status(err.status || 500);
+//   res.render('error', {
+//     message: err.message,
+//     error: {}
+//   });
+// });
+// Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());

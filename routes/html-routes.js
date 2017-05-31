@@ -6,8 +6,7 @@
 // =============================================================
 var path = require("path");
 var express = require('express');
-app = express()
-var passport = require('passport');
+app = express();
 // var router = express.Router();
 var requireRole = require('../requireRole');
 // Routes
@@ -19,22 +18,14 @@ module.exports = function(app) {
     });
     app.get("/dashboard", function(req, res){
         res.sendFile(path.join(__dirname, "../public/dashboard.html"));
-    });    
+    });
     app.get("/entry", function(req, res){
         res.sendFile(path.join(__dirname, "../public/user-entry.html"));
-    });    
+    });
 //     app.get("/about", function(req, res){
 //         res.sendFile(path.join(__dirname, "../public/about.html"));
-//     });    
+//     });
 
-
-    /* GET home page. */
-    router.get('/', function(req, res, next) {
-        res.render('index', {
-            title: 'Express',
-            env: env
-        });
-    });
 
     app.get('/login',
         function(req, res) {
@@ -42,7 +33,7 @@ module.exports = function(app) {
                 env: env
             });
         });
-    
+
     app.get('/logout', function(req, res) {
         req.logout();
         res.redirect('/');
@@ -50,4 +41,3 @@ module.exports = function(app) {
 
 
 };
-
