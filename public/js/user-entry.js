@@ -96,11 +96,11 @@ $(document).ready(function() {
     console.log(result);
 
     var userEntry = {
-    //  teamComp: teamComp,
-      position: "position",
-      result: "result",
-      mapType: "mapType",
-      mapSelect: "mapSelect"
+      teamComp: teamComp,
+      position: position,
+      result: result,
+      mapType: mapType,
+      mapSelect: mapSelect
     };
     console.log(userEntry);
     $.post("/api/entry", userEntry).done(function(data) {
