@@ -1,9 +1,9 @@
 # NERF This
 
--NERF This is an Overwatch team Competitive guide application for players by players. Offering user-generated data to help improve team and individual player outcomes. This app keeps a record of players past teams and game outcomes allowing the app to more accurately suggest Heroes to choose based on heroes already chosen for the team.
+NERF This is an Overwatch team Competitive guide application for players by players. Offering user-generated data to help improve team and individual player outcomes. This app keeps a record of players past teams and game outcomes allowing the app to more accurately suggest Heroes to choose based on heroes already chosen for the team.
 
 
-##Table of Contents
+## Table of Contents
 -Homepage/login
 -Game Entry
 -Hero Selector
@@ -23,7 +23,7 @@ Upon correct entry of your username and password you will be re-directed into th
 
 ## Hero Selector
 This page will suggest a hero for you to select for your current round.
-![HomePage](/public/picture/heroselector.png)
+![HeroSelectorPage](/public/picture/heroselector.png)
 
 1. enter map you will be playing on: 
 2. Select map type: Assult/Escort/Hybrid/Control
@@ -36,7 +36,7 @@ This page will suggest a hero for you to select for your current round.
 
 ## Game Entry
 This page will store a record of your game to our database.
-![HomePage](/public/picture/gameentry.png)
+![GameEntry](/public/picture/gameentry.png)
 Enter your game experiences:
 1. first, select the hero you chose to play
 2. next select the 5 players on your team.
@@ -44,4 +44,4 @@ Enter your game experiences:
 4. select if the game round was attack/defend and the result of the round.
 5. finally click submit to add to the database. 
 
-#Thank you for being a part of this user-enhansed expierence!
+# Thank you for being a part of this user-enhanced expierence!
