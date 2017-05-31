@@ -76,6 +76,8 @@ $(document).ready(function() {
       } else {
         alert("welcome come back " + data.userName)
         window.location.href = "dashboard.html";
+        localStorage.setItem("returnUserID", returnUserID);
+        console.log(localStorage.getItem("returnUserID"));
       }
     });
 
