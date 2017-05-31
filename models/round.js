@@ -41,7 +41,7 @@ module.exports= function(sequelize, DataTypes){
           // An User (foreignKey) is required or a Round can't be made
           	Round.belongsTo(models.User, {
             		foreignKey: {
-              			allowNull: false
+              			allowNull: true
             		}
           	});
         	}
