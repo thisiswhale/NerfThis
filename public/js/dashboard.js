@@ -8,7 +8,7 @@ $(document).ready(function() {
   // Function for retrieving user's records and getting them ready to be rendered to the page
   function getUser() {
     //this directory can be renamed, grab this users records
-    $.get("/api/user/:userid", function(data) {
+    $.get("/api/:id/allEntry", function(data) {
       var rowsToAdd = [];
       for (var i = 0; i < data.length; i++) {
         rowsToAdd.push(createEntryRow(data[i]));

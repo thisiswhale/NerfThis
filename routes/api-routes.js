@@ -11,7 +11,7 @@ var loginController = require('./../controllers/login_controller.js');
 // Routes
 // =============================================================
 module.exports = function(app) {
-  
+
   app.get("/api/user", loginController.saveUser);
 
   app.get("/api/", function(req, res) {
@@ -106,6 +106,18 @@ module.exports = function(app) {
   });
 
 
+  // ====================DASHBOARD.JS ==============================
+    // app.get("/api/:id/allEntry",function(req,res) {
+    //
+    //   queryObj ={
+    //     userName = req.param.id
+    //   }
+    //   db.Round.findAll({
+    //     where: queryObj
+    //   }).then(function(data) {
+    //     res.json(data);
+    //   });
+    // });
 
 // =========================POST for entry game record ============================
   app.post("/api/entry", function(req, res) {
