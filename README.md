@@ -44,4 +44,4 @@ Enter your game experiences:
 4. select if the game round was attack/defend and the result of the round.
 5. finally click submit to add to the database. 
 
-# Thank you for being a part of this user-enhanced expierence!
+### Thank you for being a part of this user-enhanced expierence!
