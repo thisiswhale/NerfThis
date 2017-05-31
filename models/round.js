@@ -1,6 +1,6 @@
 module.exports= function(sequelize, DataTypes){
 	var Round = sequelize.define("Round", {
-
+			
 			Genji: {type:DataTypes.BOOLEAN, default: false},
 			McCree: {type:DataTypes.BOOLEAN, default: false},
 			Pharah: {type:DataTypes.BOOLEAN, default: false},
@@ -26,9 +26,8 @@ module.exports= function(sequelize, DataTypes){
 			Symmetra: {type:DataTypes.BOOLEAN, default: false},
 			Zenyatta: {type:DataTypes.BOOLEAN, default: false},
 
-
 			mapType: {type: DataTypes.STRING},
-      mapName: {type: DataTypes.STRING},
+      		mapName: {type: DataTypes.STRING},
 			attack: {type:DataTypes.BOOLEAN, default: true},
 			victory:  {type:DataTypes.BOOLEAN, default: true}
 		});

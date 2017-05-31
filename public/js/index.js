@@ -72,7 +72,7 @@ $(document).ready(function() {
     $.post("/api/returnUsers", returnUser).done(function(data) {
       console.log(data)
       if (data === null) {
-        alert("No such user or password is not march!!!")
+        alert("No such user or password is not a match!!!")
       } else {
         alert("welcome come back " + data.userName)
         window.location.href = "dashboard.html";

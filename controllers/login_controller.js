@@ -20,9 +20,11 @@ module.exports = {
     //query for password where username = req.body.username
     bcrypt.compare(req.body.password, queryResults, function(err, res) {
       if (res) {
-        res.json(true)
+        res.json(true);
+        redirect("/dashboard");
       } else {
-        res.json(false)
+        res.json(false);
+        alert("Passowrd doesn't match. Please try again.");
       }
     })
   }

@@ -11,7 +11,9 @@ var loginController = require('./../controllers/login_controller.js');
 // Routes
 // =============================================================
 module.exports = function(app) {
-    app.get("/api/user", loginController.saveUser);
+  
+  app.get("/api/user", loginController.saveUser);
+
   app.get("/api/", function(req, res) {
     var query = {};
     if (req.query.user_id) {
