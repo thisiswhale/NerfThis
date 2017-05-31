@@ -63,7 +63,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
 app.use(express.static("./public"));
-// app.use(methodOverride("_method"));
+app.use(methodOverride("_method"));
 // Routes =============================================================
 
 require("./routes/html-routes.js")(app);
