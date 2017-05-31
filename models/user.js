@@ -22,14 +22,16 @@ module.exports = function(sequelize,DataTypes){
 				len: [2,100]
 			}
 		}
-	},
-	{ classMethods:{
-        	associate: function(models) {
-            		User.hasMany(models.Round, {
-            		onDelete: "cascade"
-         		});
-        	}
-      	}
-	});
+	}
+// 				    ,
+// 	{ classMethods:{
+//         	associate: function(models) {
+//             		User.hasMany(models.Round, {
+//             		onDelete: "cascade"
+//          		});
+//         	}
+//       	}
+// 	}
+				   );
 		return User;
     };
