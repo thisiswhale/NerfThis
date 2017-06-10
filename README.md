@@ -2,9 +2,9 @@
 
 NERF This is an Overwatch team Competitive guide application for players by players. Offering user-generated data to help improve team and individual player outcomes. This app keeps a record of players past teams and game outcomes allowing the app to more accurately suggest Heroes to choose based on heroes already chosen for the team.
 
-'''
+```
 Demo deployed on [Heroku](https://dry-journey-45708.herokuapp.com/)
-'''
+```
 
 ## Table of Contents
 - Homepage/login
@@ -54,6 +54,9 @@ Enter your game experiences:
  - ![Luis Chen](https://github.com/c297009200)
  - ![Kathrin Davis](https://github.com/KathrinDavis)
  - ![William Leung](https://github.com/thisiswhale)
+
+##### Troubleshoots
+ - Dashboard link not implemented, dashboard page renders the user's profile history of GameEntries from the database and based on user's entrys will aggregates its most played Hero.
 
 #### Built with
  - HTML
