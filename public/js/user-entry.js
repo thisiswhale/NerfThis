@@ -84,7 +84,6 @@ $(document).ready(function() {
   });
 
   //The FINAL ENTRY ROUND SUBMISSION
-  //needs to add the data from win/loss, atk/defend, map type, map area
   $('#entry-submit').on('click', function(event) {
     event.preventDefault();
     //gets team comp
@@ -102,7 +101,7 @@ $(document).ready(function() {
       mapType: mapType,
       mapSelect: mapSelect
     };
-    console.log(userEntry);
+
     $.post("/api/entry", userEntry).done(function(data) {
       console.log(data);
     });
